@@ -88,7 +88,49 @@
 <h3 id="数据业务部目标"><a href="#数据业务部目标" class="headerlink" title="数据业务部目标"></a>数据业务部目标</h3><hr>
 <p><img src="./images/2019plan/1.png" alt=""></p>
 <h3 id="2019项目总结"><a href="#2019项目总结" class="headerlink" title="2019项目总结"></a>2019项目总结</h3><hr>
-<h4 id="上半年所有工作归总"><a href="#上半年所有工作归总" class="headerlink" title="上半年所有工作归总"></a>上半年所有工作归总</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">title 上半年所有工作汇总</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">section 推广</span><br><span class="line">部署独立人工智能服务和开发对接           :a1, 2019-01-21, 20d</span><br><span class="line">跟踪人工智能实施状况     :after a1  , 160d</span><br><span class="line">section 已有模型迭代</span><br><span class="line">拜访客户获取客户需求, 对已有32种疾病模型迭代:2019-02-12  , 130d</span><br><span class="line">现有模型方案及使用交接: 2019-03-01, 10d</span><br><span class="line">section 确诊数据库整理</span><br><span class="line">与专家意见统一，清洗标准化确诊数据库: c1, 2019-03-01, 60d</span><br><span class="line">section 新模型建立</span><br><span class="line">寻找方法解决剩余17种疾病的建模问题:crit, b1, 2019-03-01, 30d</span><br><span class="line">方案设计可行性分析 : b2, after b1, 40d</span><br><span class="line">建模与实施: b3, after b2, 20d</span><br><span class="line">结合客户使用体验，修改模型设计适应现有新筛流程 : b4, after b3, 50d</span><br><span class="line">section 质控数据库整理</span><br><span class="line">十三五数据质控数据整理入库           :ba1, 2019-02-12, 7d</span><br><span class="line">数据库标准流程整理 : ba11, after ba1, 7d</span><br><span class="line">section 各地区质控数据比较</span><br><span class="line">数据描述: ba2, after ba1  , 10d</span><br><span class="line">订立模型影响质控标准: ba3, after ba2, 10d</span><br><span class="line">整理文档: ba4, after ba3, 7d</span><br><span class="line">section TSH</span><br><span class="line">肖晴欣入职           :ca1, 2019-02-12, 7d</span><br><span class="line">项目前期成果交接     :ca2, after ca1  , 7d</span><br><span class="line">TSH模型迭代: ca3, after ca2, 14d</span><br><span class="line">T4纳入模型: ca4, after ca3, 14d</span><br><span class="line">与儿保老师对接，讨论设计流程: ca5, after ca4, 7d</span><br><span class="line">前瞻性分析，落地: ca6, after ca5, 30d</span><br><span class="line">初期筛查数据库清洗 整理           :da1, 2019-02-12, 60d</span><br><span class="line">确诊样本核对      :da2, 2019-02-12  , 30d</span><br><span class="line">随模型建立做数据清洗: da3, after db1, 40d</span><br><span class="line">section 模型建立</span><br><span class="line">模型基线建立: db1, after da2, 14d</span><br><span class="line">模型迭代: db2,after db1, 40d </span><br><span class="line">section 产品化</span><br><span class="line">与市场部门对接，市场项目设计推广: dc1, after db1, 60d</span><br><span class="line">代码整合: dc2, after db1, 14d</span><br><span class="line">与软件部门对接: dc3, after dc2, 40d</span><br></pre></td></tr></table></figure>
+<h4 id="上半年所有工作归总"><a href="#上半年所有工作归总" class="headerlink" title="上半年所有工作归总"></a>上半年所有工作归总</h4><div class="mermaid">
+  gantt
+title 上半年所有工作汇总
+dateFormat  YYYY-MM-DD
+section 推广
+部署独立人工智能服务和开发对接           :a1, 2019-01-21, 20d
+跟踪人工智能实施状况     :after a1  , 160d
+section 已有模型迭代
+拜访客户获取客户需求, 对已有32种疾病模型迭代:2019-02-12  , 130d
+现有模型方案及使用交接: 2019-03-01, 10d
+section 确诊数据库整理
+与专家意见统一，清洗标准化确诊数据库: c1, 2019-03-01, 60d
+section 新模型建立
+寻找方法解决剩余17种疾病的建模问题:crit, b1, 2019-03-01, 30d
+方案设计可行性分析 : b2, after b1, 40d
+建模与实施: b3, after b2, 20d
+结合客户使用体验，修改模型设计适应现有新筛流程 : b4, after b3, 50d
+section 质控数据库整理
+十三五数据质控数据整理入库           :ba1, 2019-02-12, 7d
+数据库标准流程整理 : ba11, after ba1, 7d
+section 各地区质控数据比较
+数据描述: ba2, after ba1  , 10d
+订立模型影响质控标准: ba3, after ba2, 10d
+整理文档: ba4, after ba3, 7d
+section TSH
+肖晴欣入职           :ca1, 2019-02-12, 7d
+项目前期成果交接     :ca2, after ca1  , 7d
+TSH模型迭代: ca3, after ca2, 14d
+T4纳入模型: ca4, after ca3, 14d
+与儿保老师对接，讨论设计流程: ca5, after ca4, 7d
+前瞻性分析，落地: ca6, after ca5, 30d
+初期筛查数据库清洗 整理           :da1, 2019-02-12, 60d
+确诊样本核对      :da2, 2019-02-12  , 30d
+随模型建立做数据清洗: da3, after db1, 40d
+section 模型建立
+模型基线建立: db1, after da2, 14d
+模型迭代: db2,after db1, 40d 
+section 产品化
+与市场部门对接，市场项目设计推广: dc1, after db1, 60d
+代码整合: dc2, after db1, 14d
+与软件部门对接: dc3, after dc2, 40d
+</div>
+
 <h4 id="1-十三五项目模型迭代与推广（遗传代谢病）"><a href="#1-十三五项目模型迭代与推广（遗传代谢病）" class="headerlink" title="1. 十三五项目模型迭代与推广（遗传代谢病）"></a>1. 十三五项目模型迭代与推广（遗传代谢病）</h4><p><strong>模型承接</strong><br>辛然 刘攀</p>
 <p><strong>推广</strong><br>部署独立人工智能服务和开发对接 1月底前 辛然<br>跟踪人工智能实施状况</p>
 <p><strong>已有模型迭代</strong></p>
@@ -105,7 +147,25 @@
 <ol>
 <li>与专家意见统一，清洗标准化确诊数据库</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">title 十三五项目模型迭代与推广</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">section 推广</span><br><span class="line">部署独立人工智能服务和开发对接           :a1, 2019-01-21, 20d</span><br><span class="line">跟踪人工智能实施状况     :after a1  , 160d</span><br><span class="line">section 已有模型迭代</span><br><span class="line">拜访客户获取客户需求, 对已有32种疾病模型迭代:2019-02-12  , 130d</span><br><span class="line">现有模型方案及使用交接: 2019-03-01, 10d</span><br><span class="line">section 确诊数据库整理</span><br><span class="line">与专家意见统一，清洗标准化确诊数据库: c1, 2019-03-01, 60d</span><br><span class="line">section 新模型建立</span><br><span class="line">寻找方法解决剩余17种疾病的建模问题:crit, b1, 2019-03-01, 30d</span><br><span class="line">方案设计可行性分析 : b2, after b1, 40d</span><br><span class="line">建模与实施: b3, after b2, 20d</span><br><span class="line">结合客户使用体验，修改模型设计适应现有新筛流程 : b4, after b3, 50d</span><br></pre></td></tr></table></figure>
+<div class="mermaid">
+  gantt
+title 十三五项目模型迭代与推广
+dateFormat  YYYY-MM-DD
+section 推广
+部署独立人工智能服务和开发对接           :a1, 2019-01-21, 20d
+跟踪人工智能实施状况     :after a1  , 160d
+section 已有模型迭代
+拜访客户获取客户需求, 对已有32种疾病模型迭代:2019-02-12  , 130d
+现有模型方案及使用交接: 2019-03-01, 10d
+section 确诊数据库整理
+与专家意见统一，清洗标准化确诊数据库: c1, 2019-03-01, 60d
+section 新模型建立
+寻找方法解决剩余17种疾病的建模问题:crit, b1, 2019-03-01, 30d
+方案设计可行性分析 : b2, after b1, 40d
+建模与实施: b3, after b2, 20d
+结合客户使用体验，修改模型设计适应现有新筛流程 : b4, after b3, 50d
+</div>
+
 <h4 id="2-临检中心质控规则（遗传代谢病）"><a href="#2-临检中心质控规则（遗传代谢病）" class="headerlink" title="2. 临检中心质控规则（遗传代谢病）"></a>2. 临检中心质控规则（遗传代谢病）</h4><p><strong>项目承接</strong><br>辛然 刘攀 陈凌云  </p>
 <p><strong>新筛会议</strong><br>4月15-18日新筛会议汇报  </p>
 <p><strong>包含工作内容</strong>  </p>
@@ -113,7 +173,19 @@
 <li>质控数据库整理  </li>
 <li>各地区平行比较  </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">title 临检中心质控汇报</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">section 质控数据库整理</span><br><span class="line">十三五数据质控数据整理入库           :a1, 2019-02-12, 7d</span><br><span class="line">数据库标准流程整理 : a11, after a1, 7d</span><br><span class="line">section 各地区质控数据比较</span><br><span class="line">数据描述: a2, after a1  , 10d</span><br><span class="line">订立模型影响质控标准: a3, after a2, 10d</span><br><span class="line">整理文档: a4, after a3, 7d</span><br></pre></td></tr></table></figure>
+<div class="mermaid">
+  gantt
+title 临检中心质控汇报
+dateFormat  YYYY-MM-DD
+section 质控数据库整理
+十三五数据质控数据整理入库           :a1, 2019-02-12, 7d
+数据库标准流程整理 : a11, after a1, 7d
+section 各地区质控数据比较
+数据描述: a2, after a1  , 10d
+订立模型影响质控标准: a3, after a2, 10d
+整理文档: a4, after a3, 7d
+</div>
+
 <blockquote>
 <p>数据描述：各单位衍生、非衍生、仪器、试剂厂家</p>
 </blockquote>
@@ -121,7 +193,18 @@
 <p><strong>目前进度</strong><br>单指标TSH建模尝试  </p>
 <p><strong>预达目标</strong><br>儿保老师在考虑纳入T4做二阶筛查，样本已有，目前阳性率1.3-1.8% 降低阳性率<br>儿保老师希望知道TSH截断值设定会造成的阳性率波动情况<br>区分疾病为：高TSH血症、甲低  </p>
 <p><strong>难点</strong><br>假阳性率过高，漏筛容易，确诊没有金标准，确诊中有标签错误的情况<br>TSH受应激性影响大，单次测量的确诊易出现假阳性，需要考虑确诊样本纳入问题<br>模型不是单独建立即可，需要结合现有流程改进，需要和儿保老师讨论可行性方案  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">title TSH T4 儿保项目（新筛四病）</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">肖晴欣入职           :a1, 2019-02-12, 7d</span><br><span class="line">项目前期成果交接     :a2, after a1  , 7d</span><br><span class="line">TSH模型迭代: a3, after a2, 14d</span><br><span class="line">T4纳入模型: a4, after a3, 14d</span><br><span class="line">与儿保老师对接，讨论设计流程: a5, after a4, 7d</span><br><span class="line">前瞻性分析，落地: a6, after a5, 30d</span><br></pre></td></tr></table></figure>
+<div class="mermaid">
+  gantt
+title TSH T4 儿保项目（新筛四病）
+dateFormat  YYYY-MM-DD
+肖晴欣入职           :a1, 2019-02-12, 7d
+项目前期成果交接     :a2, after a1  , 7d
+TSH模型迭代: a3, after a2, 14d
+T4纳入模型: a4, after a3, 14d
+与儿保老师对接，讨论设计流程: a5, after a4, 7d
+前瞻性分析，落地: a6, after a5, 30d
+</div>
+
 <h4 id="4-孕妇妊娠期风险管理系统（产筛疾病）"><a href="#4-孕妇妊娠期风险管理系统（产筛疾病）" class="headerlink" title="4. 孕妇妊娠期风险管理系统（产筛疾病）"></a>4. 孕妇妊娠期风险管理系统（产筛疾病）</h4><p><strong>模型承接</strong><br>辛然 高慧云   </p>
 <p><strong>主要工作</strong><br>数据的清洗 整理 - 3 4月 <del>陈凌云 乐文义</del><br>确诊样本的确认 - 3 4月 <del>辛然 高慧云</del><br>长沙市妇幼检测和数据整理完<br>使用清洗后确诊样本建立模型基线，方便建立项目书推进模型推进 <del>高慧云</del>  </p>
 <p><strong>难点</strong><br>确诊样本有匹配错误的情况<br>产筛指征性弱，数据时效性差<br>项目推进速度依靠市场，在市场动作较慢时需要解决推进问题  </p>
