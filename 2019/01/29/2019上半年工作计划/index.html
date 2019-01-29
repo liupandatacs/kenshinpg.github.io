@@ -16,7 +16,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/01/29/2019上半年工作计划/images/2019plan/1.png">
 <meta property="og:image" content="http://yoursite.com/2019/01/29/2019上半年工作计划/images/2019plan/2.png">
-<meta property="og:updated_time" content="2019-01-29T06:40:08.259Z">
+<meta property="og:updated_time" content="2019-01-29T06:44:11.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019上半年工作计划">
 <meta name="twitter:description" content="[TOC] 数据业务部目标  2019项目总结 上半年所有工作归总12345678910111213141516171819202122232425262728293031323334353637383940gantttitle 上半年所有工作汇总dateFormat  YYYY-MM-DDsection 推广部署独立人工智能服务和开发对接           :a1, 2019-01-21, 2">
@@ -161,7 +161,17 @@ section 产品化
 <ol>
 <li>Gitlab保存工作记录<br>py md sql ipynb </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A1[确诊库] --&gt;|ETL1| B0(调用数据)</span><br><span class="line">A2[筛查库] --&gt;|ETL2| B0</span><br><span class="line">B0 --&gt; |数据清洗|B1(训练数据)</span><br><span class="line">B1 --&gt;|模型训练| C&#123;输出&#125;</span><br><span class="line">C --&gt;|模型封装| D1[模型文件]</span><br><span class="line">C --&gt;|错义分析| D2[下一步迭代方案]</span><br><span class="line">C --&gt;|模型表现| D3[模型表现报告]</span><br></pre></td></tr></table></figure>
+<div class="mermaid">
+  graph TD
+	A1[确诊库] -->|ETL1| B0(调用数据)
+	A2[筛查库] -->|ETL2| B0
+	B0 --> |数据清洗|B1(训练数据)
+	B1 -->|模型训练| C{输出}
+	C -->|模型封装| D1[模型文件]
+	C -->|错义分析| D2[下一步迭代方案]
+	C -->|模型表现| D3[模型表现报告]
+</div>
+
 <p><strong>所有文档上传Gitlab</strong></p>
 <blockquote>
 <p>ETL: 数据库版本号、SQL语句<br>数据清洗: data_clean.py<br>模型训练: 特征工程 + 调参 + 模型融合 + 错义分析<br>模型封装: 模型文件mfile + 参数 jsonfile<br>模型表现: 与传统方案的对比结果 + 评价指标结果 + 与项目要求的差距 md文档</p>
@@ -201,7 +211,7 @@ section 产品化
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/29/2019上半年工作计划/" data-id="cjrhd1fj20000vgua0deqicj8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/29/2019上半年工作计划/" data-id="cjrhecr0000014wuaygo9b8ih" class="article-share-link">Share</a>
       
       
     </footer>
